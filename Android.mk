@@ -38,4 +38,4 @@ include $(BUILD_PREBUILT)
 endif
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
-
+include $(call all-subdir-makefiles,$(LOCAL_PATH))

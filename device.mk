@@ -42,6 +42,12 @@ PRODUCT_PACKAGES += \
         VisualizationWallpapers \
         librs_jni
 
+# loki
+PRODUCT_PACKAGES += \
+	loki_patch \
+	loki_flash \
+	loki.sh
+
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
 	$(LOCAL_PATH)/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
