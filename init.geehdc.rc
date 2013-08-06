@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-import init.geehrc.usb.rc
+import init.geehdc.usb.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
@@ -44,7 +44,7 @@ on init
     mkdir /sns/cal 0771 system system
 
 on fs
-    mount_all ./fstab.geehrc
+    mount_all ./fstab.geehdc
     restorecon /persist/.bt_nv.bin
     restorecon /sns/cal/sns.reg
     restorecon /sns/cal
@@ -283,13 +283,13 @@ service rmt_storage /system/bin/rmt_storage
     class main
     user root
 
-service config_bluetooth /system/bin/sh /system/etc/init.geehrc.bt.sh "onboot"
+service config_bluetooth /system/bin/sh /system/etc/init.geehdc.bt.sh "onboot"
     class core
     user root
     seclabel u:r:bluetooth_loader:s0
     oneshot
 
-service hciattach /system/bin/sh /system/etc/init.geehrc.bt.sh
+service hciattach /system/bin/sh /system/etc/init.geehdc.bt.sh
     class late_start
     user bluetooth
     group qcom_oncrpc bluetooth net_bt_admin system

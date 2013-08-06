@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-# This file includes all definitions that apply to ALL geehrc devices, and
-# are also specific to geehrc devices
+# This file includes all definitions that apply to ALL geehdc devices, and
+# are also specific to geehdc devices
 #
 # Everything in this directory will become public
 
@@ -29,7 +29,7 @@ PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PACKAGES := \
-	lights.geehrc
+	lights.geehdc
 
 PRODUCT_PACKAGES += \
     charger_res_images \
@@ -52,14 +52,14 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/audio_policy.conf:system/etc/audio_policy.conf
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/thermald-geehrc.conf:system/etc/thermald.conf \
+	$(LOCAL_PATH)/thermald-geehdc.conf:system/etc/thermald.conf \
 	$(LOCAL_PATH)/qosmgr_rules.xml:system/etc/qosmgr_rules.xml
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/init.geehrc.rc:root/init.geehrc.rc \
-	$(LOCAL_PATH)/init.geehrc.usb.rc:root/init.geehrc.usb.rc \
-	$(LOCAL_PATH)/fstab.geehrc:root/fstab.geehrc \
-	$(LOCAL_PATH)/ueventd.geehrc.rc:root/ueventd.geehrc.rc \
+	$(LOCAL_PATH)/init.geehdc.rc:root/init.geehdc.rc \
+	$(LOCAL_PATH)/init.geehdc.usb.rc:root/init.geehdc.usb.rc \
+	$(LOCAL_PATH)/fstab.geehdc:root/fstab.geehdc \
+	$(LOCAL_PATH)/ueventd.geehdc.rc:root/ueventd.geehdc.rc \
 	$(LOCAL_PATH)/media_profiles.xml:system/etc/media_profiles.xml \
 	$(LOCAL_PATH)/media_codecs.xml:system/etc/media_codecs.xml
 
@@ -189,7 +189,7 @@ PRODUCT_PACKAGES += \
 #	power.msm8960
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/init.geehrc.bt.sh:system/etc/init.geehrc.bt.sh
+	$(LOCAL_PATH)/init.geehdc.bt.sh:system/etc/init.geehdc.bt.sh
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.qualcomm.bt.hci_transport=smd
