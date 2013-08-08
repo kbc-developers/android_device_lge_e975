@@ -18,7 +18,7 @@ import init.geehdc.usb.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
-    write /sys/class/leds/lcd-backlight/brightness 150
+    write /sys/class/leds/lcd-backlight/brightness 154
 
 on init
     # See storage config details at http://source.android.com/tech/storage/
@@ -71,6 +71,10 @@ on boot
 
     #Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
+
+    #brightness properties
+    setprop ro.lge.lcd_default_brightness 154
+    setprop ro.lge.lcd_auto_brightness_mode false
 
     #port-bridge
     chmod 0660 /dev/smd0
