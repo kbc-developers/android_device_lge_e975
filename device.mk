@@ -58,7 +58,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/audio_policy.conf:system/etc/audio_policy.conf
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/thermald-geehrc.conf:system/etc/thermald.conf \
+	$(LOCAL_PATH)/thermald-geehdc.conf:system/etc/thermald.conf \
 	$(LOCAL_PATH)/qosmgr_rules.xml:system/etc/qosmgr_rules.xml
 
 PRODUCT_COPY_FILES += \

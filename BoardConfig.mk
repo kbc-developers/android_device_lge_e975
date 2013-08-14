@@ -82,7 +82,7 @@ TARGET_USES_SF_BYPASS := true
 TARGET_USES_C2D_COMPOSITION := true
 
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_RECOVERY_FSTAB = device/lge/e975/fstab.geehrc
+TARGET_RECOVERY_FSTAB = device/lge/geehdc/fstab.geehdc
 RECOVERY_FSTAB_VERSION = 2
 
 # loki
@@ -153,4 +153,4 @@ BOARD_SEPOLICY_UNION += \
 	ueventd.te \
 	wpa_supplicant.te
 
-BOARD_HARDWARE_CLASS := device/lge/e975/cmhw/
+BOARD_HARDWARE_CLASS := device/lge/geehdc/cmhw/
