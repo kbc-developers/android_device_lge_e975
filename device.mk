@@ -30,14 +30,14 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
-PRODUCT_PACKAGES := \
-	lights.geehdc
-
 # loki
 PRODUCT_PACKAGES += \
 	loki_patch \
 	loki_flash \
 	loki.sh
+	
+PRODUCT_PACKAGES += \
+	lights.geehdc
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
