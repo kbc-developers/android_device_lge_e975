@@ -74,3 +74,5 @@ BOARD_SEPOLICY_UNION := \
 
 ## We need this for FM support
 TARGET_QCOM_AUDIO_VARIANT := caf
+
+BOARD_HARDWARE_CLASS += device/lge/geehdc/cmhw
