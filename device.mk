@@ -70,8 +70,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=320
 
-PRODUCT_CHARACTERISTICS := nosdcard
-
 PRODUCT_PACKAGES += \
 	hci_qcomm_init
 
