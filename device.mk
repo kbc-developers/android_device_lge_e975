@@ -63,6 +63,10 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/apq8064-tabla-snd-card_Button_Jack.kcm:system/usr/keychars/apq8064-tabla-snd-card_Button_Jack.kcm \
 	$(LOCAL_PATH)/keypad_8064.kcm:system/usr/keychars/keypad_8064.kcm
 
+#These are hardware-specific features
+PRODUCT_COPY_FILES += \
+	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=320
 
@@ -92,9 +96,24 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	keystore.msm8960
 
+PRODUCT_PROPERTY_OVERRIDES += \
+	telephony.lteOnCdmaDevice=0 \
+	ro.telephony.default_network=9 \
+	telephony.lteOnGsmDevice=1
+
 PRODUCT_PACKAGES += \
 	wpa_supplicant_overlay.conf \
 	p2p_supplicant_overlay.conf
+
+## FM 
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/init.gee.fm.sh:system/etc/init.gee.fm.sh \
+	$(LOCAL_PATH)/audio_policy.conf:system/vendor/etc/audio_policy.conf
+
+PRODUCT_PACKAGES += \
+	FM2 \
+	qcom.fmradio \
+	libqcomfm_jni
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
