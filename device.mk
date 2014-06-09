@@ -54,6 +54,7 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/initlogo.rle:root/initlogo.rle888 \
 	$(LOCAL_PATH)/init.geehdc.rc:root/init.geehdc.rc \
 	$(LOCAL_PATH)/fstab.geehdc:root/fstab.geehdc \
+	$(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab \
 	$(LOCAL_PATH)/ueventd.geehdc.rc:root/ueventd.geehdc.rc
 
 # Prebuilt kl and kcm keymaps
