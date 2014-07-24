@@ -60,9 +60,9 @@ PRODUCT_COPY_FILES += \
 
 # This hw ships locked, work around it with loki
 PRODUCT_PACKAGES += \
-	loki.sh \
-	loki_patch \
-	loki_flash
+	loki_tool \
+	loki_tool_static_gproj \
+	recovery-transform.sh
 
 #These are hardware-specific features
 PRODUCT_COPY_FILES += \
