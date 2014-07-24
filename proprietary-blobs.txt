@@ -95,7 +95,6 @@ lib/libxml.so
 lib/lib_dlb_msd.so
 lib/libWVphoneAPI.so
 lib/hw/camera.msm8960.so
-lib/hw/nfc.default.so
 lib/hw/sensors.msm8960.so
 bin/ATFWD-daemon
 bin/bridgemgrd
@@ -119,7 +118,6 @@ bin/rild
 bin/mm-qcamera-daemon
 bin/mpdecision
 bin/qosmgr
-vendor/firmware/libpn544_fw.so
 vendor/firmware/a300_pfp.fw
 vendor/firmware/a300_pm4.fw
 vendor/firmware/keymaster/keymaster.b03
