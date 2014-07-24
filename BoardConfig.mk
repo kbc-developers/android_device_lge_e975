@@ -40,6 +40,7 @@ BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB = device/lge/geehdc/fstab.geehdc
+ENABLE_LOKI_RECOVERY := true
 
 -include vendor/lge/geehdc/BoardConfigVendor.mk
 
@@ -68,6 +69,8 @@ BOARD_SEPOLICY_UNION := \
         system.te \
         ueventd.te \
         wpa.te
+
+TARGET_RELEASETOOLS_EXTENSIONS := device/lge/gproj-common/loki
 
 BOARD_HARDWARE_CLASS += device/lge/geehdc/cmhw
 
