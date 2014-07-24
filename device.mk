@@ -58,6 +58,12 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/apq8064-tabla-snd-card_Button_Jack.kcm:system/usr/keychars/apq8064-tabla-snd-card_Button_Jack.kcm \
 	$(LOCAL_PATH)/keypad_8064.kcm:system/usr/keychars/keypad_8064.kcm
 
+# This hw ships locked, work around it with loki
+PRODUCT_PACKAGES += \
+	loki.sh \
+	loki_patch \
+	loki_flash
+
 #These are hardware-specific features
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
